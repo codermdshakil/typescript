@@ -52,7 +52,19 @@ const mixed = ['apple', 'banana', 'orange', {}, []];
 // mixed.push([4,6,8,10]);
 // console.log(mixed);
 
+//** Object struture */ 
 
+const student = {
+    name:'Shakil Ahmed',
+    age:20,
+    isEmployee:true
+}
+
+// this is a student structure of student object i have to follow this structure when i want to add, assign new values
+
+student.name = '45'; // here i should use string 
+student.age  = 25;
+// console.log(student);
 
 // Two types of Assignment // 
 
@@ -63,7 +75,7 @@ const firstName:string = "Shakil Ahmed";
 
 // 2. Implicit - TypeScript will "guess" the type, based on the assigned value: 
 const lastName = "Ahmed";
-console.log(lastName);
+// console.log(lastName);
 
 
 
