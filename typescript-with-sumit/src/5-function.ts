@@ -95,8 +95,10 @@ const isAdult = (name:string,age:number):any =>{
 // isAdult('Siam',18);
 
 
+
 // Summary
 // 1. normal function
 // 2. arrow function
 // 3. void function
 // 4. return number, string, any of function return value
+
