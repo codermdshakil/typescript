@@ -70,3 +70,14 @@ const isAdult = (name, age) => {
 // 2. arrow function
 // 3. void function
 // 4. return number, string, any of function return value
+// Another example
+const isAdult1 = (name, age) => {
+    if (age >= 18) {
+        return `${name} is Adult!`;
+    }
+    else {
+        return `${name} is Not Adult!`;
+    }
+};
+const result3 = isAdult('shakil', 20);
+// console.log(result3);
