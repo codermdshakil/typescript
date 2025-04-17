@@ -24,4 +24,3 @@ const sayHello = ( user:userObj) => {
 }
 
 // sayHello(user2);
-
