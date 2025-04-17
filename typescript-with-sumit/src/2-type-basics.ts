@@ -81,10 +81,3 @@ const lastName = "Ahmed";
 
 
 
-
- 
-
-
-
-
-
