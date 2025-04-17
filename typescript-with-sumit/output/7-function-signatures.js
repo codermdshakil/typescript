@@ -41,11 +41,63 @@ let userDetails5;
 userDetails5 = (id, userInfo) => {
     console.log(userInfo.name);
 };
+/**
+ * Function signatures
+ * 1. inline signature
+ * 2. function signature using type alias
+ *
+ *
+*/
 // 1. 🔤 Inline Signature
 function helloName(name) {
     return ` Hello! - ${name}`;
 }
-// const r7 = helloName('Shakil Ahmed');
-// const r8 = helloName('Noyon Rahman');
-// console.log(r7);
-// console.log(r8);
+//2. use custom signature function
+const helloBrother = (id, name) => {
+    return `Student id = ${id}. Student name ${name}`;
+};
+const result9 = helloBrother(1, 'Shakil Ahmed');
+// using muckup create userShakil
+const userShakil = {
+    id: 1,
+    name: 'Shakil Ahmed',
+    lifeGoal: 'CEO | Businessmen',
+    isHired: false,
+    isStudent: true,
+    salary: 12500
+};
+const userNoyon = {
+    id: 2,
+    name: 'Noyon Rahman',
+    lifeGoal: 'Businessmen | Founder | CEO',
+    isHired: true,
+    isStudent: true,
+    salary: 10000
+};
+const userNadim = {
+    id: 3,
+    name: 'Nadim Hassan',
+    lifeGoal: 'Get married',
+    isHired: false,
+    isStudent: false,
+    salary: 150000
+};
+// console.log(userShakil, userNoyon, userNadim);
+/**
+ * Summary of function signature
+ *
+ * --- A function signature is like a blueprint 🧱 — it defines:
+ *
+ * - The parameter types
+ * - The number of parameters
+ * - The return type
+ *
+ * -- type -> to create custom type =
+ * -- using direct function use :
+ *
+ * --- Function signature
+ * 1. inline singnature
+ * 2. function singnature using [type alias]
+ * 3. function singnature in object using [interface]
+ *
+*/
