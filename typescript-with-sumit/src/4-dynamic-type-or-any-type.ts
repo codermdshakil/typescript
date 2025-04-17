@@ -38,3 +38,16 @@ const user1: unknown = fetchData();
 
 
 
+// Object 
+let b :{
+    name:any,
+    age:any
+};
+
+
+b = {
+    name:'Bangladesh',
+    age:20
+};
+
+console.log('check', b);
