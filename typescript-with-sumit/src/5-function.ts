@@ -114,8 +114,8 @@ const twoValueSum = (a: number= 6, b:number, c?:number):string => {
     return `${a} + ${b} ${c?' + ' + c:' '} = ${sum} ${c?'+ '+ c:''}`;
 }
 
-const r4 = twoValueSum(4,5, 6);
-console.log(r4);
+// const r4 = twoValueSum(4,5, 6);
+// console.log(r4);
 
 
 

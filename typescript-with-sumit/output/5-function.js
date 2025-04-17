@@ -75,8 +75,8 @@ const twoValueSum = (a = 6, b, c) => {
     const sum = `${a + b}`;
     return `${a} + ${b} ${c ? ' + ' + c : ' '} = ${sum} ${c ? '+ ' + c : ''}`;
 };
-const r4 = twoValueSum(4, 5, 6);
-console.log(r4);
+// const r4 = twoValueSum(4,5, 6);
+// console.log(r4);
 // Summary
 // 1. normal function
 // 2. arrow function
