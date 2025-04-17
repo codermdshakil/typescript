@@ -41,3 +41,11 @@ let userDetails5;
 userDetails5 = (id, userInfo) => {
     console.log(userInfo.name);
 };
+// 1. 🔤 Inline Signature
+function helloName(name) {
+    return ` Hello! - ${name}`;
+}
+// const r7 = helloName('Shakil Ahmed');
+// const r8 = helloName('Noyon Rahman');
+// console.log(r7);
+// console.log(r8);

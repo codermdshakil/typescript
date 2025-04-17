@@ -59,6 +59,18 @@ userDetails5 = (id:number|string, userInfo:{name:string,age:number}) => {
 };
 
 
+// 1. 🔤 Inline Signature
+
+function helloName(name:string):string{
+    return ` Hello! - ${name}`;
+}
+// const r7 = helloName('Shakil Ahmed');
+// const r8 = helloName('Noyon Rahman');
+// console.log(r7);
+// console.log(r8);
+
+
+
 
 
 
