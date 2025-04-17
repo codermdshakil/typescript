@@ -6,6 +6,7 @@
 
 
 
+
 // basic syntax
 
 //** Normal function 
@@ -49,6 +50,7 @@ function calculateDiscount(price: number, discount: number): number {
 const greet = (name: string = "John Deo"): string => {
     return `Hello, ${name}`;
 };
+
 // or shortcut 
 // function with default parameter
 // const greeting = (name: string = "John Deo"): string => `Hello, ${name}`;
@@ -82,17 +84,39 @@ const greet = (name: string = "John Deo"): string => {
 
 // Task - 1:
 
-const isAdult = (name:string,age:number):any =>{
-    if(age >= 18){
-      console.log(`${name} is Adult!`);
-    }
-    else{
+// const isAdult = (name:string,age:number):any =>{
+//     if(age >= 18){
+//       console.log(`${name} is Adult!`);
+//     }
+//     else{
 
-        console.log(`${name} is Not Adult!`);
-    }
-}
+//         console.log(`${name} is Not Adult!`);
+//     }
+// }
 
 // isAdult('Siam',18);
+
+
+
+// let myFun: Function;
+
+// // begailla system
+// // myFun = () => {
+// //     // code 
+// // }
+
+
+// Optional parameter with default parameter value
+
+const twoValueSum = (a: number= 6, b:number, c?:number):string => {
+    const sum = `${a+b}`;
+
+    return `${a} + ${b} ${c?' + ' + c:' '} = ${sum} ${c?'+ '+ c:''}`;
+}
+
+const r4 = twoValueSum(4,5, 6);
+console.log(r4);
+
 
 
 
@@ -101,6 +125,8 @@ const isAdult = (name:string,age:number):any =>{
 // 2. arrow function
 // 3. void function
 // 4. return number, string, any of function return value
+// 5. parameter defaul value
+// 6. optional parameter
 
 // Another example
 
@@ -114,5 +140,5 @@ const isAdult1 = (name:string, age:number):string => {
     }
 };
 
-const result3 = isAdult('shakil', 20);
+// const result3 = isAdult('shakil', 20);
 // console.log(result3);

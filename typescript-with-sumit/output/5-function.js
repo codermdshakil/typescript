@@ -56,20 +56,34 @@ const greet = (name = "John Deo") => {
 // }
 // sayHello();
 // Task - 1:
-const isAdult = (name, age) => {
-    if (age >= 18) {
-        console.log(`${name} is Adult!`);
-    }
-    else {
-        console.log(`${name} is Not Adult!`);
-    }
-};
+// const isAdult = (name:string,age:number):any =>{
+//     if(age >= 18){
+//       console.log(`${name} is Adult!`);
+//     }
+//     else{
+//         console.log(`${name} is Not Adult!`);
+//     }
+// }
 // isAdult('Siam',18);
+// let myFun: Function;
+// // begailla system
+// // myFun = () => {
+// //     // code 
+// // }
+// Optional parameter with default parameter value
+const twoValueSum = (a = 6, b, c) => {
+    const sum = `${a + b}`;
+    return `${a} + ${b} ${c ? ' + ' + c : ' '} = ${sum} ${c ? '+ ' + c : ''}`;
+};
+const r4 = twoValueSum(4, 5, 6);
+console.log(r4);
 // Summary
 // 1. normal function
 // 2. arrow function
 // 3. void function
 // 4. return number, string, any of function return value
+// 5. parameter defaul value
+// 6. optional parameter
 // Another example
 const isAdult1 = (name, age) => {
     if (age >= 18) {
@@ -79,5 +93,5 @@ const isAdult1 = (name, age) => {
         return `${name} is Not Adult!`;
     }
 };
-const result3 = isAdult('shakil', 20);
+// const result3 = isAdult('shakil', 20);
 // console.log(result3);
