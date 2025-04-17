@@ -34,7 +34,7 @@ function fetchData(): unknown {
 };
 
 const user1: unknown = fetchData();
-console.log(user1);
+// console.log(user1);
 
 
 
