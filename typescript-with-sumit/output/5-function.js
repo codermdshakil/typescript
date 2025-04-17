@@ -24,4 +24,49 @@ const sum = (a, b) => {
 const mul = (a, b) => {
     return `${a} and ${b} multiply is = ${a * b}`;
 };
-// const r2 = mul(10, 20);  // 10 and 20 multiply is = 200 return value in string 
+const r2 = mul(10, 20); // 10 and 20 multiply is = 200 return value in string 
+// console.log(r2);
+// Calculate discount formula 
+function calculateDiscount(price, discount) {
+    return price - (price * discount) / 100;
+}
+;
+// console.log(calculateDiscount(500, 5));
+//1. arrow function 
+const greet = (name = "John Deo") => {
+    return `Hello, ${name}`;
+};
+// or shortcut 
+// function with default parameter
+// const greeting = (name: string = "John Deo"): string => `Hello, ${name}`;
+// console.log(greeting());
+// console.log(greeting('shakil ahmed'));
+// 2. Optional Parameters with void function
+// function log(message: string, user?: string): void {
+//   console.log(`${user ?? "Anonymous"}: ${message}`);
+// };
+// console.log(log('Hello vai'));
+// 3.Function Types (for reusability) [custom type]
+// type MathOperation = (a:number, b:number) => number;
+// const add:MathOperation= (a, b) => a + b;
+// const multy:MathOperation = (a, b) => a * b;
+// 4. Void Function (returns nothing)
+// function sayHello(): void {
+//     console.log("Hello!");
+// }
+// sayHello();
+// Task - 1:
+const isAdult = (name, age) => {
+    if (age >= 18) {
+        console.log(`${name} is Adult!`);
+    }
+    else {
+        console.log(`${name} is Not Adult!`);
+    }
+};
+// isAdult('Siam',18);
+// Summary
+// 1. normal function
+// 2. arrow function
+// 3. void function
+// 4. return number, string, any of function return value
