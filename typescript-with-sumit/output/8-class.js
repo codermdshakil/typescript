@@ -2,6 +2,7 @@
 /**
  * Class: A class is a blueprint for creating objects with properties (data) and methods (functions).
  * */
+// Access Modifiers
 // Concept	        Description
 // ------------------------------------
 // constructor()	Special method to initialize the object
@@ -38,11 +39,30 @@ players.push(student2);
 players.push(student3);
 players.push(student4);
 // foreach every element
-players.forEach((player) => console.log(player.name));
+// players.forEach((player) => console.log(player.name));
 // Access Modifier
 student2.name = "Sagor";
 student3.age = 21;
 student4.country = 'Pakistan';
 student4.age = 22;
 // console.log(student2.country);
-console.log(student4.name, student4.age, student4.country);
+// console.log(student4.name, student4.age, student4.country);
+/**
+ * Access modifier: Class with public access modifier
+ *
+*/
+class Student {
+    constructor(name, roll, gpa) {
+        this.name = name;
+        this.roll = roll;
+        this.gpa = gpa;
+    }
+    getGPA() {
+        return this.gpa;
+    }
+}
+;
+const studentRahim = new Student('Rahim', 20, 4.3);
+// console.log(studentRahim.name);
+// console.log(studentRahim.roll);
+// console.log(studentRahim.getGPA());
