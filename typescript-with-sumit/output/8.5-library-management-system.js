@@ -31,8 +31,18 @@ class Library {
     constructor() {
         this.books = [];
     }
+    // add book to books array
     addBook(book) {
         this.books.push(book);
         console.log(`Book "${book.title}" added to the library.`);
+    }
+    // show all books from array
+    showAvailableBooks() {
+        console.log("📚 Available Books:");
+        this.books.forEach((book) => {
+            if (book.isAvailable) {
+                console.log(`- ${book.title} by ${book.author}`);
+            }
+        });
     }
 }
