@@ -74,7 +74,7 @@ student4.age = 22;
  * 
 */
 
-class Student{
+class StudentInfo{
     public name:string;
     public roll:number;
     private gpa:number;
@@ -90,7 +90,7 @@ class Student{
     }
 };
 
-const studentRahim = new Student('Rahim', 20, 4.3);
+const studentRahim = new StudentInfo('Rahim', 20, 4.3);
 
 // console.log(studentRahim.name);
 // console.log(studentRahim.roll);

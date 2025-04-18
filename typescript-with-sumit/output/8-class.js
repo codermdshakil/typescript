@@ -51,7 +51,7 @@ student4.age = 22;
  * Access modifier: Class with public access modifier
  *
 */
-class Student {
+class StudentInfo {
     constructor(name, roll, gpa) {
         this.name = name;
         this.roll = roll;
@@ -62,7 +62,7 @@ class Student {
     }
 }
 ;
-const studentRahim = new Student('Rahim', 20, 4.3);
+const studentRahim = new StudentInfo('Rahim', 20, 4.3);
 // console.log(studentRahim.name);
 // console.log(studentRahim.roll);
 // console.log(studentRahim.getGPA());
