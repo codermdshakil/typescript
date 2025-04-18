@@ -1,5 +1,11 @@
 // Create book class using this class you can make multiple book  objects
-export class Book{
+
+// import IsBook interfaces
+
+import {IsBook} from '../interfaces/IsBook.js';
+
+
+export class Book implements IsBook{
     public id:number;
     public title:string;
     public author:string;
