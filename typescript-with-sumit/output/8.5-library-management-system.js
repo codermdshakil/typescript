@@ -67,3 +67,18 @@ class Library {
         }
     }
 }
+const myLibrary = new Library();
+const book1 = new Book(1, "The Alchemist", "Paulo Coelho");
+const book2 = new Book(2, "Atomic Habits", "James Clear");
+const book3 = new Book(3, "Deep Work", "Cal Newport");
+// book added to myLibrary
+myLibrary.addBook(book1);
+myLibrary.addBook(book2);
+myLibrary.addBook(book3);
+// borrow book using id 2
+myLibrary.borrowBookById(2);
+myLibrary.borrowBookById(2); // not find book
+// return book of id 2
+// myLibrary.returnBookById(2);
+// myLibrary.showAvailableBooks();
+// console.log(myLibrary);
