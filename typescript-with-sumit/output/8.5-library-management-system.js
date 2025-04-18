@@ -45,10 +45,22 @@ class Library {
             }
         });
     }
+    // borrow book from books
     borrowBookById(bookid) {
         const findedBook = this.books.find((b) => b.id === bookid);
         if (findedBook) {
             findedBook.borrowBook();
+        }
+        else {
+            console.log("Book not found!");
+        }
+    }
+    // return book 
+    // borrow book from books
+    returnBookById(bookid) {
+        const findedBook = this.books.find((b) => b.id === bookid);
+        if (findedBook) {
+            findedBook.returnBook();
         }
         else {
             console.log("Book not found!");

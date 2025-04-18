@@ -55,6 +55,7 @@ class Library{
         })
     }
 
+    // borrow book from books
     borrowBookById(bookid:number){
 
         const findedBook = this.books.find((b) => b.id === bookid);
@@ -66,7 +67,20 @@ class Library{
         }
     }
 
-    
+    // return book 
+
+    // borrow book from books
+    returnBookById(bookid:number){
+
+        const findedBook = this.books.find((b) => b.id === bookid);
+        if(findedBook){
+            findedBook.returnBook();
+        }
+        else{
+            console.log("Book not found!");
+        }
+    }
+
 
     
 
