@@ -1,3 +1,4 @@
+// create Book shape or rules
 
 export interface IsBook{
     id:number;
@@ -5,4 +6,6 @@ export interface IsBook{
     author:string;
     isAvailable:boolean;
 }
+
+
 
