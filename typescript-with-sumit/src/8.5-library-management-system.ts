@@ -36,4 +36,14 @@ class Book{
 }
 
 
+class Library{
+    private books:Book[] = [];
+
+    addBook(book:Book){
+        this.books.push(book);
+        console.log(`Book "${book.title}" added to the library.`);
+    }
+
+}
+
 

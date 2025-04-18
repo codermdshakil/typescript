@@ -27,3 +27,12 @@ class Book {
         console.log(`You returned "${this.title}"`);
     }
 }
+class Library {
+    constructor() {
+        this.books = [];
+    }
+    addBook(book) {
+        this.books.push(book);
+        console.log(`Book "${book.title}" added to the library.`);
+    }
+}
