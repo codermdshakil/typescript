@@ -4,8 +4,23 @@
  * - Define object
  * - Optional perperties
  *
- * 🎯 Summary
  *
+ * 🔍 1. Access Object Elements in Different Ways
+ * 1. Dot Notation (.)
+ * 2. Bracket Notation (['propertyName'])
+ * 3. Dynamic key access (variable)
+ *
+ * ➕ 2. Add New Properties in Different Ways
+ * 1. Add New Property (Directly using dot notation)
+ * 2. Add New Property with (Bracket Notation)
+ * 3. Add Property with (Spread Operator)
+ *
+ * ❌ 3. Delete Properties in Different Ways
+ * 1. Using delete Keyword
+ * 2. Destructuring to Remove
+ *
+ *
+ * 🎯 Summary
  * ✅ Object = key-value pairs
  * ✅ Can hold multiple data types
  * ✅ Access: dot, bracket, dynamic
