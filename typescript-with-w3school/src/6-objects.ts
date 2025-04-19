@@ -139,6 +139,23 @@ const users: Users[] = [
 // console.log(users[3]["hobbies"]);
 
 // 3. Dynamic key access (variable)
-const key = "name";
+// const key = "name";
 // console.log(users[4][key]);
 // console.log(users[4][key as keyof User]);
+
+/**
+ * ➕ 2. Add New Properties in Different Ways
+ *
+ * 1. Add New Property (Directly using dot notation)
+ * 2. Add New Property with (Bracket Notation)
+ * 3. Add Property with (Spread Operator)
+ */
+
+// 1. Add New Property (Directly using dot notation)
+// users[0].name = "Shakil AHmed";
+
+// 2. Add New Property with (Bracket Notation)
+// users[1]["email"] = "ahmedshakil0512@gmail.com";
+
+// 3. Add Property with (Spread Operator)
+// const updatedUser = { ...users[2], role: "admin" };
