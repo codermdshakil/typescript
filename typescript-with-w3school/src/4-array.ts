@@ -134,5 +134,55 @@
 // friends.splice(0,1);
 
 
+// Project: 🛠️ Mini CRUD Operation on users Array 
 
+
+type User = { id: number, name: string };
+
+let userList: User[] = [
+  { id: 1, name: "Alice" },
+  { id: 2, name: "Bob" }
+];
+
+// ## Create
+
+function addUser(user:User){
+    userList.push(user);
+};
+addUser({id:3, name:'Shakil'});
  
+// ## Read
+
+function getUserById(id:number){
+    const findedItem = userList.find((user) => user.id === id);
+    return findedItem;
+}
+// console.log(getUserById(2));
+
+
+// ## Update
+
+function updateUser(id:number, newName:string){
+    const findedItem = userList.find((user) => user.id === id);
+    if(findedItem){
+        findedItem.name = newName;
+    }
+    return findedItem;
+};
+updateUser(2,'Noyon Rahman'); 
+
+
+// ## delete
+
+function deleteById(id:number){
+    const findedUser = userList.find((user) => user.id === id);
+    const filteredUsers = userList.filter((user) => user != findedUser);
+    return filteredUsers;
+};
+
+// console.log(deleteById(2));
+
+
+
+
+
