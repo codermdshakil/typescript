@@ -73,3 +73,21 @@ const users = [
     },
 ];
 // console.log(users);
+/**
+ *
+ * 🔍 1. Access Object Elements in Different Ways
+ * - 1. Dot Notation (.)
+ * - 2. Bracket Notation (['propertyName'])
+ * - 3. Dynamic key access (variable)
+ *
+ * */
+// 1. Dot Notation (.)
+// console.log(users[0].name);
+// console.log(users[1].email);
+// 2. Bracket Notation (['propertyName'])
+// console.log(users[2]["email"]);
+// console.log(users[3]["hobbies"]);
+// 3. Dynamic key access (variable)
+const key = "name";
+// console.log(users[4][key]);
+// console.log(users[4][key as keyof User]);
