@@ -20,7 +20,8 @@
  * 2. shift -> first element of array
  * 3. splice -> specific index element of array
  *
- *  
+ * Read only array
+ * const names: readonly string[] = ["Dylan"];
 */
 
 
@@ -181,6 +182,9 @@ function deleteById(id:number){
 };
 
 // console.log(deleteById(2));
+
+
+
 
 
 

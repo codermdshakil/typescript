@@ -20,7 +20,8 @@
  * 2. shift -> first element of array
  * 3. splice -> specific index element of array
  *
- *
+ * Read only array
+ * const names: readonly string[] = ["Dylan"];
 */
 let userList = [
     { id: 1, name: "Alice" },
