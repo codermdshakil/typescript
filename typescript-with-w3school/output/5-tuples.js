@@ -2,7 +2,7 @@
 /**
  * ## Tuples -
  *
- *  - Fixed-length,
+ * - Fixed-length,
  * - ordered,
  * - typed array
  * - Each element can have different type
