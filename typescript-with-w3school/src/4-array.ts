@@ -79,7 +79,29 @@ const friends: User[] = [sd1, sd2, sd3];
 // 1. using index : console.log(friends[0]);
 // 2. using slice : console.log(friends.slice(1,2));
 
+// ➕ Add Elements to Array (Different Ways) 
 
+// 1. push -> end of the array
+// 2. unshift -> first of the array
+// 3. splice -> specific index of array
+
+const sd4:User = {
+    id:4,
+    name:'Asraf',
+    profession:'Mecanical Eng',
+    salary:10000,
+    isHired:false,
+    heHas:{hand:2,eye:2}
+};
+
+// push
+// friends.push(sd4);
+
+// unshift
+// friends.unshift(sd4)
+
+// splice 
+// friends.splice(2,0,sd4)
  
 
 
