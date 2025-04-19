@@ -51,8 +51,18 @@ const sd4 = {
     heHas: { hand: 2, eye: 2 }
 };
 // push
-// friends.push(sd4);
+friends.push(sd4);
 // unshift
 // friends.unshift(sd4)
 // splice 
 // friends.splice(2,0,sd4)
+// ➖ Delete Elements from Array (Different Ways) 
+// 1. pop -> end element of array
+// 2. shift -> first element of array
+// 3. splice -> specific index element of array
+// pop
+// friends.pop();
+// shift
+// friends.shift();
+// splice
+// friends.splice(0,1);

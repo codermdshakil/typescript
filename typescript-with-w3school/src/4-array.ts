@@ -33,6 +33,7 @@
 
 // const students:any = [{name:'Shakil', age:20, isHired:false, goal:'Buil Software Company'}, {name:'Noyon', age:22, isHired:true, goal:'Buil Software Company'}];
 
+// create object rules using interface
 
 interface User{
     id:number;
@@ -95,7 +96,7 @@ const sd4:User = {
 };
 
 // push
-// friends.push(sd4);
+friends.push(sd4);
 
 // unshift
 // friends.unshift(sd4)
@@ -103,6 +104,21 @@ const sd4:User = {
 // splice 
 // friends.splice(2,0,sd4)
  
+
+// ➖ Delete Elements from Array (Different Ways) 
+// 1. pop -> end element of array
+// 2. shift -> first element of array
+// 3. splice -> specific index element of array
+
+
+// pop
+// friends.pop();
+
+// shift
+// friends.shift();
+
+// splice
+// friends.splice(0,1);
 
 
 
