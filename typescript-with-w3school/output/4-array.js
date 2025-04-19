@@ -35,3 +35,6 @@ const sd3 = {
 };
 // create a friends array where every array element type is user
 const friends = [sd1, sd2, sd3];
+// 🔍 Accessing Array Elements (Different Ways) 
+// 1. using index : console.log(friends[0]);
+// 2. using slice : console.log(friends.slice(1,2));
