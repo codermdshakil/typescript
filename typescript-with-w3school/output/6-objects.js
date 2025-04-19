@@ -140,3 +140,34 @@ const users = [
 // 2. Destructuring to Remove
 const _a = users[1], { email } = _a, others = __rest(_a, ["email"]);
 // console.log(others); // removed email
+/**
+ * 📜 Summary of Object Operations in TypeScript:
+ *
+ * 1. **Object Basics**:
+ *    - Objects are key-value pairs.
+ *    - Can hold multiple data types.
+ *
+ * 2. **Accessing Properties**:
+ *    - Dot Notation: `object.property`
+ *    - Bracket Notation: `object['property']`
+ *    - Dynamic Key Access: `object[variable]`
+ *
+ * 3. **Adding Properties**:
+ *    - Dot Notation: `object.newProperty = value`
+ *    - Bracket Notation: `object['newProperty'] = value`
+ *    - Spread Operator: `{ ...object, newProperty: value }`
+ *
+ * 4. **Deleting Properties**:
+ *    - `delete object.property`
+ *    - Destructuring: `const { property, ...rest } = object`
+ *
+ * 5. **CRUD Operations**:
+ *    - Create: Define new objects or properties.
+ *    - Read: Access object properties.
+ *    - Update: Modify existing properties.
+ *    - Delete: Remove properties from objects.
+ *
+ * 6. **Interface Usage**:
+ *    - Define object structure with `interface`.
+ *    - Example: `interface Users` for user objects.
+ */
