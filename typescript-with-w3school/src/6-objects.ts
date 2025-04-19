@@ -159,3 +159,16 @@ const users: Users[] = [
 
 // 3. Add Property with (Spread Operator)
 // const updatedUser = { ...users[2], role: "admin" };
+
+/**
+ * ❌ 3. Delete Properties in Different Ways
+ * 1. Using delete Keyword
+ * 2. Destructuring to Remove
+ */
+
+// 1. Using delete Keyword
+// delete users[0].name;
+
+// 2. Destructuring to Remove
+const { email, ...others } = users[1];
+// console.log(others); // removed email

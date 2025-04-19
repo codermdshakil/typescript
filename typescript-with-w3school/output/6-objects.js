@@ -15,6 +15,17 @@
  * ✅ CRUD = Create, Read, Update, Delete operations on objects
  *
  * */
+var __rest = (this && this.__rest) || function (s, e) {
+    var t = {};
+    for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
+        t[p] = s[p];
+    if (s != null && typeof Object.getOwnPropertySymbols === "function")
+        for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
+            if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
+                t[p[i]] = s[p[i]];
+        }
+    return t;
+};
 const users = [
     {
         id: 1,
@@ -104,3 +115,13 @@ const users = [
 // users[1]["email"] = "ahmedshakil0512@gmail.com";
 // 3. Add Property with (Spread Operator)
 // const updatedUser = { ...users[2], role: "admin" };
+/**
+ * ❌ 3. Delete Properties in Different Ways
+ * 1. Using delete Keyword
+ * 2. Destructuring to Remove
+ */
+// 1. Using delete Keyword
+// delete users[0].name;
+// 2. Destructuring to Remove
+const _a = users[1], { email } = _a, others = __rest(_a, ["email"]);
+// console.log(others); // removed email
