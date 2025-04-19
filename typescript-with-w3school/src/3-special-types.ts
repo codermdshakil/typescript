@@ -56,3 +56,27 @@
 
 
 
+
+// ### Type: never
+
+// - It never gives you anything, because it either crashes or never finishes.
+
+// let test: never = true;
+// console.log(test);
+
+// type Shape = "circle" | "square";
+
+// function getArea(shape:Shape){
+//     if(shape === 'circle'){
+//         return 3.45;
+//     }
+//     else if(shape === 'square'){
+//         return 5;
+//     }
+//     else{
+//         const _test : never = shape;
+//     }
+//     // return _test; // error it don't give you anything
+// };
+ 
+

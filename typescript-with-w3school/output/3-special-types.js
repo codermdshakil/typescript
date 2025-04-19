@@ -33,3 +33,20 @@
 //     console.log(data.toUpperCase()); // Ok
 // }
 // when we want to make some operations with unknow type value then we must check it type that's why unknown is safer more then any type
+// ### Type: never
+// - It never gives you anything, because it either crashes or never finishes.
+// let test: never = true;
+// console.log(test);
+// type Shape = "circle" | "square";
+// function getArea(shape:Shape){
+//     if(shape === 'circle'){
+//         return 3.45;
+//     }
+//     else if(shape === 'square'){
+//         return 5;
+//     }
+//     else{
+//         const _test : never = shape;
+//     }
+//     // return _test; // error it don't give you anything
+// };
