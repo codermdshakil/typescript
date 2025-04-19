@@ -50,3 +50,6 @@
 //     }
 //     // return _test; // error it don't give you anything
 // };
+// ### null vs undefine
+// - null is absense of value
+// - undefine is not assign a value
