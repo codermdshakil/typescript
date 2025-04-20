@@ -8,6 +8,9 @@
  * 3. Arrow functions: Concise syntax for functions, such as `introduceMySelf` and `greatUser`.
  * 4. Void functions: Functions that do not return a value, such as `greatUser`.
  *
+ * - Optional Parameter
+ * - Default parameter
+ *
  * Tips:
  * - Always define parameter and return types for better type safety.
  * - Use arrow functions for concise syntax, especially for callbacks or short functions.
@@ -39,7 +42,7 @@ const mySelf = function (name, age) {
     return `Hello! here, My name is ${name} and I'm ${age} years Old!`;
 };
 // 3. Arrow function
-const introduceMySelf = (name, age, target) => {
+const introduceMySelf = (name = 'Shakil Ahmed', age, target) => {
     return `My name is ${name}. I'm ${age} years old. My target is ${target}`;
 };
 // console.log(introduceMySelf('Shakil Ahmed', 20, ' Software Engineer | CEO of CoreThree'));
