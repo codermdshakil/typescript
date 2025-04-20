@@ -18,7 +18,7 @@
  * incorrect types are provided by a library.
  *
 */
-// Casting using as keyword
+// ## Casting using as keyword
 const myVar = "Hello";
 // console.log((myVar as string).length); // 5
 // ## Casting using <>

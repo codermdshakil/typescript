@@ -20,7 +20,7 @@
 */
 
 
-// Casting using as keyword
+// ## Casting using as keyword
 
 const myVar:unknown = "Hello";
 // console.log((myVar as string).length); // 5
@@ -29,5 +29,3 @@ const myVar:unknown = "Hello";
 
 const myVar2: unknown = "Shakil Ahmed";
 // console.log((<string>myVar2).length);
-
-
