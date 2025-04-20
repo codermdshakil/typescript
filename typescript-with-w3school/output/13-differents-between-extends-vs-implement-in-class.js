@@ -26,6 +26,9 @@
  * - Example of extending a class (`finalStudent`).
  * - Instances of extended class with additional attributes.
  *
+ * 🧠 Analogy:
+- extends: Like inheriting your parent’s house — you get rooms (properties) and furniture (methods).
+- implements: Like agreeing to follow a building plan — you must build everything, but it must match the shape.
  *
  *
 */
