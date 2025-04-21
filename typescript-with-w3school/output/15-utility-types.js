@@ -10,6 +10,9 @@ const userObj = {
     // age:20,
     // location:"Gazipur"
 };
-// remove union number types so that I can store string value
-const value3 = 'Shakil ahmed';
-// console.log(value3);
+const point = {
+    x: 10,
+    y: 20,
+    age: 20,
+    name: 'Shakil Ahmed',
+};

@@ -128,11 +128,26 @@ const userObj: Pick <Person3, 'name'> = {
  * 
 */
 
-type Primitive = string | number | boolean;
+// type Primitive = string | number | boolean;
 
 // remove union number types so that I can store string value
-const value3 : Exclude<Primitive, number> = 'Shakil ahmed';
+// const value3 : Exclude<Primitive, number> = 'Shakil ahmed';
 // console.log(value3);
+
+/**
+ * ReturnType
+ * - ReturnType extracts the return type of a function type.
+ * 
+*/
+
+type pointGenerator = () => {x:number, y:number, age:number, name:string};
+const point:ReturnType <pointGenerator> = {
+    x:10,
+    y:20,
+    age:20,
+    name:'Shakil Ahmed',
+};
+
 
 
 
