@@ -14,14 +14,14 @@
  * */ 
 
 
-interface Points{
-    x:number;
-    y:number;
-}
+// interface Points{
+//     x:number;
+//     y:number;
+// }
 
-const point : Partial<Points>  = {}
-point.x = 10;
-point.y = 20;
+// const point : Partial<Points>  = {}
+// point.x = 10;
+// point.y = 20;
 // console.log(point);
 
 /**
@@ -30,17 +30,17 @@ point.y = 20;
  * 
 */
 
-interface Car{
-    make:string;
-    model:string;
-    mileage?:number; // optional
-}
+// interface Car{
+//     make:string;
+//     model:string;
+//     mileage?:number; // optional
+// }
 
-const myCar : Required<Car> = {
-    make:'Mercedes Bezs',
-    mileage:10000,
-    model:'GLS 4500'
-};
+// const myCar : Required<Car> = {
+//     make:'Mercedes Bezs',
+//     mileage:10000,
+//     model:'GLS 4500'
+// };
 
 // console.log(myCar);
 
@@ -79,23 +79,47 @@ const myCar : Required<Car> = {
  */
 
 
-interface Persons1 {
-    name:string;
-    age:number;
-    location?:string;
-}
+// interface Persons1 {
+//     name:string;
+//     age:number;
+//     location?:string;
+// }
 
 // here using omit removed "location" and "age" property just from nadimHassan Object
-const nadimHassan : Omit <Persons1, 'location' | 'age'>= {
-    name:'Nadim Hassan',
-    // age:20,
-    // location:'Khilghaw' 
-};
+// const nadimHassan : Omit <Persons1, 'location' | 'age'>= {
+//     name:'Nadim Hassan',
+//     // age:20,
+//     // location:'Khilghaw' 
+// };
 
 // here need all properties because i don;t use Omit here
-const noyonRahman : Persons1 = {
-    name:'Noyon',
-    age:22,
-    location:'barigong'
+// const noyonRahman : Persons1 = {
+//     name:'Noyon',
+//     age:22,
+//     location:'barigong'
+// }
+
+/**
+ * 
+ * Pick
+ * - Pick removes all but the specified keys from an object type.
+ * 
+*/
+
+interface Person3 {
+    name: string;
+    age: number;
+    location?: string;
 }
- 
+  
+// * - Pick removes all but the specified keys from an object type. 
+
+const userObj: Pick <Person3, 'name'> = {
+    name:'Shakil Ahmed',
+    // age:20,
+    // location:"Gazipur"
+};
+
+console.log(userObj);
+
+
