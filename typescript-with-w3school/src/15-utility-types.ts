@@ -120,6 +120,20 @@ const userObj: Pick <Person3, 'name'> = {
     // location:"Gazipur"
 };
 
-console.log(userObj);
+// console.log(userObj);
+
+/**
+ * Exclude
+ * - Exclude removes types from a union.
+ * 
+*/
+
+type Primitive = string | number | boolean;
+
+// remove union number types so that I can store string value
+const value3 : Exclude<Primitive, number> = 'Shakil ahmed';
+// console.log(value3);
+
+
 
 

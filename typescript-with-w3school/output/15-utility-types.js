@@ -10,4 +10,6 @@ const userObj = {
     // age:20,
     // location:"Gazipur"
 };
-console.log(userObj);
+// remove union number types so that I can store string value
+const value3 = 'Shakil ahmed';
+// console.log(value3);
